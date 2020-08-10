@@ -3,7 +3,19 @@
   "version": "1.0.0",
   "description": "Typescript Node.js API",
   "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "yarn build && node dist/src/index.js"
+  },
   "repository": "https://github.com/danilolosi/node-typescript-api.git",
   "author": "Danilo Losi <danilo.lsanctis@hotmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/module-alias": "^2.0.0",
+    "@types/node": "^14.0.27",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.2"
+  }
 }
